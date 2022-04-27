@@ -12,6 +12,7 @@ use Joomla\CMS\Helper\ModuleHelper;
 $api = $params->get('ttapp_api');
 $type = $params->get('ttapp_type');
 $poule = $params->get('ttapp_poule');
+$headers = $params->get('ttapp_headers');
 if ($params->get('moduleclass_sfx') !== "") {
     $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 }

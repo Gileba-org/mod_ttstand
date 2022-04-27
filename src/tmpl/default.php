@@ -20,10 +20,14 @@ echo '<script src="https://ttapp.nl/dist/ttapp-widgets.js"></script>';
 echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';
 switch ($type) {
 	case "poule":
-		echo ', pouleid: "' . $poule . '"});';
+		echo ', pouleid: "' . $poule . '"';
+		if ($headers !== null) {
+			echo ', headers: "' . $headers . '"';
+		}
+		echo '});';
 		break;
 	default:
-		echo '"});';
+		echo '});';
 }
 echo '</script>';
 echo "</div>";

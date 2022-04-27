@@ -33,6 +33,7 @@
           <option value="poule">MOD_TTSTAND_POULE</option>
         </field>
         <field name="ttapp_poule" type="number" label="MOD_TTSTAND_POULE_LABEL" />
+        <field name="ttapp_headers" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
       </fieldset>
       <fieldset name="advanced">
         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
