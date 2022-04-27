@@ -1,6 +1,6 @@
 ﻿<?php
 /**
-* @Author  Mostafa Shahiri
+* @Author	Gijs Lamon
 * @license	GNU/GPL http://www.gnu.org/copyleft/gpl.html
 **/
 
@@ -10,4 +10,15 @@ defined('_JEXEC') or die();
 use Joomla\CMS\Language\Text;
 
 // Hello World
-echo Text::_('MOD_TTSTAND_HELLOWORLD');
+echo '<div class="ttstand">';
+echo '<script src="https://ttapp.nl/dist/ttapp-widgets.js"></script>';
+echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';
+switch ($type) {
+	case "poule":
+		echo ', pouleid: "' . $poule . '"});';
+		break;
+	default:
+		echo '"});';
+}
+echo '</script>';
+echo "</div>";
