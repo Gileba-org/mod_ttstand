@@ -12,7 +12,7 @@ use Joomla\CMS\Language\Text;
 
 // Load external files
 $document = Factory::getDocument();
-$document->addStyleSheet(JURI::root() . "modules/mod_ttstand/css/mod_ttstand.css", array("version" => "auto"));
+$document->addStyleSheet("modules/mod_ttstand/css/mod_ttstand.css", array("version" => "auto"));
 
 // Code
 echo '<div class="ttstand">';
