@@ -12,11 +12,11 @@ use Joomla\CMS\Language\Text;
 
 // Load external files
 $document = Factory::getDocument();
+$document->addScript("https://ttapp.nl/dist/ttapp-widgets.js");
 $document->addStyleSheet("modules/mod_ttstand/css/mod_ttstand.css", array("version" => "auto"));
 
 // Code
 echo '<div class="ttstand">';
-echo '<script src="https://ttapp.nl/dist/ttapp-widgets.js"></script>';
 echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';
 switch ($type) {
 	case "poule":
