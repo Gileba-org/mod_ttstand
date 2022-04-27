@@ -1,5 +1,6 @@
 .ttapp-table-lines {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 .ttstand thead tr td {
