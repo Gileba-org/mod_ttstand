@@ -27,8 +27,8 @@
   </languages>
   <config>
     <fields name="params">
-     <fieldset name="style">
-         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+     <fieldset name="advanced">
+         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
       </fieldset>
     </fields>
   </config>
