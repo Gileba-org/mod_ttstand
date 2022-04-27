@@ -5,16 +5,22 @@
 .ttstand thead tr td {
 	text-transform: capitalize;
 	font-weight: bold;
-	padding-right: 10px;
 	background-color: #eee;
 }
 
-.ttstand thead tr td.ttapp-teamname {
-	width: 50%;
+.ttstand tr td.ttapp-teamname {
+	width: 70%;
 }
-.ttstand thead tr td.ttapp-nplayed, .ttstand thead tr td.ttapp-points {
-	width: 25%;
+.ttstand tr td.ttapp-nplayed, .ttstand thead tr td.ttapp-points {
+	width: 10%;
 }
+.ttstand tr td.ttapp-nplayed {
+	text-align: center;
+}
+.ttstand tr td.ttapp-points {
+	text-align: right;
+}
+
 
 .ttstand tbody tr:nth-child(even) {
 	background-color: #eee;
