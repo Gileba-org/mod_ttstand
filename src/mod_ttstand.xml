@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" method="upgrade" client="site" >
+  <name>TT Stand voor TTapp</name>
+  <author>Gijs Lamon</author>
+  <copyright>(C) 2022 Gileba</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>info@gileba.be</authorEmail>
+  <authorUrl>www.gileba.be</authorUrl>
+  <version>1.0.0-dev-1</version>
+  <creationDate>2022-04-27</creationDate>
+  <description>
+    This module shows information from the TTapp website on your Joomla site.
+  </description>
+  <updateservers>
+   <server type="extension" priority="1" name="TT Stand for TTapp">
+      https://gileba.be/updates/mod_ttstand.xml
+   </server>
+  </updateservers>
+  <files>
+    <filename module="mod_ttstand">mod_ttstand.php</filename>
+    <folder>tmpl</folder>
+    <folder>language</folder>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.mod_ttstand.ini</language>
+    <language tag="nl-NL">nl-NL/nl-NL.mod_ttstand.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+     <fieldset name="style">
+         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
