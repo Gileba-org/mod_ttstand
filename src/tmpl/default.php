@@ -7,9 +7,14 @@
 defined('_JEXEC') or die();
 
 // Libraries
+use Joomla\CMS\Factory;
 use Joomla\CMS\Language\Text;
 
-// Hello World
+// Load external files
+$document = Factory::getDocument();
+$document->addStyleSheet(JURI::root() . "modules/mod_ttstand/css/mod_ttstand.css", array("version" => "auto"));
+
+// Code
 echo '<div class="ttstand">';
 echo '<script src="https://ttapp.nl/dist/ttapp-widgets.js"></script>';
 echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';

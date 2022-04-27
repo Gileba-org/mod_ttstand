@@ -1,0 +1,21 @@
+.ttapp-table-lines {
+	border-collapse: collapse;
+}
+
+.ttstand thead tr td {
+	text-transform: capitalize;
+	font-weight: bold;
+	padding-right: 10px;
+	background-color: #eee;
+}
+
+.ttstand thead tr td.ttapp-teamname {
+	width: 50%;
+}
+.ttstand thead tr td.ttapp-nplayed, .ttstand thead tr td.ttapp-points {
+	width: 25%;
+}
+
+.ttstand tbody tr:nth-child(even) {
+	background-color: #eee;
+}
