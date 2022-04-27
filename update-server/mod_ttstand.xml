@@ -5,6 +5,7 @@
 		<element>mod_ttstand</element>
 		<type>module</type>
 		<version>1.0.0-dev-1</version>
+		<client>site</client>
 		<infourl title="TT Stand"></infourl>
 		<downloads>
 			<downloadurl type="full" format="zip">https://github.com/Gileba-org/mod_ttstand/releases/download/1.0.0-dev-1/mod_ttstand.zip</downloadurl>
@@ -12,5 +13,5 @@
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<targetplatform name="joomla" version="4" />
+		<targetplatform name="joomla" version="4.[0123456789]" />
 	</update>
