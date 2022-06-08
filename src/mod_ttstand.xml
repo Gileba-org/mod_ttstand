@@ -6,8 +6,8 @@
   <license>GNU/GPL</license>
   <authorEmail>info@gileba.be</authorEmail>
   <authorUrl>www.gileba.be</authorUrl>
-  <version>1.0.0-dev-1</version>
-  <creationDate>2022-04-27</creationDate>
+  <version>1.0.0</version>
+  <creationDate>2022-06-08</creationDate>
   <description>
     This module shows information from the TTapp website on your Joomla site.
   </description>
