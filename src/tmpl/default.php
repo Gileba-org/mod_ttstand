@@ -22,6 +22,9 @@ switch ($type) {
 	case "poule":
 		echo ', pouleid: "' . $poule . '"';
 		if ($headers !== null) {
+		if ($cols != "") {
+			echo ', cols: "' . $cols . '"';
+		}
 			echo ', headers: "' . $headers . '"';
 		}
 		echo '});';
