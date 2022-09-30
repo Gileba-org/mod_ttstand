@@ -21,6 +21,9 @@ echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';
 switch ($type) {
 	case "poule":
 		echo ', pouleid: "' . $poule . '"';
+		if ($cols != "") {
+			echo ', cols: "' . $cols . '"';
+		}
 		if ($headers != "") {
 			echo ', headers: "' . $headers . '"';
 		}

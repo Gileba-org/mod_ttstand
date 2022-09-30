@@ -33,6 +33,26 @@
           <option value="poule">MOD_TTSTAND_POULE</option>
         </field>
         <field name="ttapp_poule" showon="ttapp_type:poule" type="number" label="MOD_TTSTAND_POULE_LABEL" />
+        <field name="ttapp_col_pos" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POS_LABEL" class="btn-group btn-group-yesno" default="0">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="ttapp_col_name" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_NAME_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="ttapp_col_played" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_PLAYED_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="ttapp_col_points" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POINTS_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="ttapp_col_rating" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_RATING_LABEL" class="btn-group btn-group-yesno" default="0">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
         <field name="ttapp_headers" showon="ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
       </fieldset>
       <fieldset name="advanced">
