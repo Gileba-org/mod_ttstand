@@ -4,12 +4,12 @@
 		<description>A module to use the widgets from TTapp</description>
 		<element>mod_ttstand</element>
 		<type>module</type>
-		<version>1.1.0</version>
+		<version>1.2.0</version>
 		<client>site</client>
 		<infourl title="TT Stand"></infourl>
-		<changelogurl>http://updates.gileba.be/changelogs/mod_ttstand.xml</changelogurl>
+		<changelogurl>https://gileba.be/changelogs/mod_ttstand.xml</changelogurl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/Gileba-org/mod_ttstand/releases/download/1.1.0/mod_ttstand.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://gileba.be/index.php?option=com_osmembership&amp;task=download_update_package&amp;document_id=2</downloadurl>
 		</downloads>
 		<tags>
 			<tag>stable</tag>
