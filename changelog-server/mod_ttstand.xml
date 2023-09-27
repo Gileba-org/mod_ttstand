@@ -3,6 +3,17 @@
 	<changelog>
 		<element>mod_ttstand</element>
 		<type>module</type>
+		<version>1.2.0</version>
+		<change>
+			<item>Free subscription needed at https://www.gileba.be/software/ttstand/ for downloading and auto updating</item>
+		</change>
+		<note>
+			<item>Published in the Joomla Extensions Directory</item>
+		</note>
+	</changelog>
+	<changelog>
+		<element>mod_ttstand</element>
+		<type>module</type>
 		<version>1.1.0</version>
 		<new>
 			<item>Add support for showing/hiding columns</item>
