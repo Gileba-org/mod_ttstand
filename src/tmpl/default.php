@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 /**
 * @Author	Gijs Lamon
 * @license	GNU/GPL http://www.gnu.org/copyleft/gpl.html
