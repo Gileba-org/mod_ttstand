@@ -22,7 +22,6 @@
 	text-align: right;
 }
 
-
-.ttstand tbody tr:nth-child(even) {
+.ttstand tbody tr:nth-child(even) td {
 	background-color: #eee;
 }
