@@ -36,6 +36,7 @@ switch ($api) {
 		}
 		echo "</script>";
 		echo "</div>";
+		break;
 	case "tabt":
 		echo "<table class='ttstand'>";
 		echo "<thead><tr>";
@@ -50,4 +51,5 @@ switch ($api) {
 			echo "</tr>";
 		}
 		echo "</table>";
+		break;
 }
