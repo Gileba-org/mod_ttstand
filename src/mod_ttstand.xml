@@ -30,32 +30,36 @@
   <config>
     <fields name="params">
       <fieldset name="basic">
-        <field name="ttapp_api" type="text" label="MOD_TTSTAND_API_LABEL" />
-        <field name="ttapp_type" type="list" label="MOD_TTSTAND_TYPE_LABEL">
+        <field name="api" type="list" label="MOD_TTSTAND_CHOOSEAPI">
+          <option value="ttapp">MOD_TTSTAND_TTAPP</option>
+          <option value="tabt">MOD_TTSTAND_TABT</option>
+        </field>
+        <field name="ttapp_api" type="text" label="MOD_TTSTAND_API_LABEL" showon="api:ttapp" />
+        <field name="ttapp_type" type="list" label="MOD_TTSTAND_TYPE_LABEL" showon="api:ttapp">
           <option value="poule">MOD_TTSTAND_POULE</option>
         </field>
-        <field name="ttapp_poule" showon="ttapp_type:poule" type="number" label="MOD_TTSTAND_POULE_LABEL" />
-        <field name="ttapp_col_pos" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POS_LABEL" class="btn-group btn-group-yesno" default="0">
+        <field name="ttapp_poule" showon="api:ttapp, ttapp_type:poule" type="number" label="MOD_TTSTAND_POULE_LABEL" />
+        <field name="ttapp_col_pos" showon="api:ttapp, ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POS_LABEL" class="btn-group btn-group-yesno" default="0">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
         </field>
-        <field name="ttapp_col_name" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_NAME_LABEL" class="btn-group btn-group-yesno" default="1">
+        <field name="ttapp_col_name" showon="api:ttapp, ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_NAME_LABEL" class="btn-group btn-group-yesno" default="1">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
         </field>
-        <field name="ttapp_col_played" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_PLAYED_LABEL" class="btn-group btn-group-yesno" default="1">
+        <field name="ttapp_col_played" showon="api:ttapp, ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_PLAYED_LABEL" class="btn-group btn-group-yesno" default="1">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
         </field>
-        <field name="ttapp_col_points" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POINTS_LABEL" class="btn-group btn-group-yesno" default="1">
+        <field name="ttapp_col_points" showon="api:ttapp, ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_POINTS_LABEL" class="btn-group btn-group-yesno" default="1">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
         </field>
-        <field name="ttapp_col_rating" showon="ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_RATING_LABEL" class="btn-group btn-group-yesno" default="0">
+        <field name="ttapp_col_rating" showon="api:ttapp, ttapp_type:poule" type="radio" label="MOD_TTSTAND_COLUMN_RATING_LABEL" class="btn-group btn-group-yesno" default="0">
           <option value="1">JYES</option>
           <option value="0">JNO</option>
         </field>
-        <field name="ttapp_headers" showon="ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
+        <field name="ttapp_headers" showon="api:ttapp, ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
       </fieldset>
       <fieldset name="advanced">
         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
