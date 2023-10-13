@@ -34,6 +34,9 @@
           <option value="ttapp">MOD_TTSTAND_TTAPP</option>
           <option value="tabt">MOD_TTSTAND_TABT</option>
         </field>
+        <field name="tabt_account" type="text" label="MOD_TTSTAND_TABT_ACCOUNT_LABEL" showon="api:tabt" />
+        <field name="tabt_password" type="password" label="MOD_TTSTAND_TABT_PASSWORD_LABEL" showon="api:tabt" />
+        <field name="tabt_division" type="number" label="MOD_TTSTAND_TABT_DIVISION_LABEL" showon="api:tabt" />
         <field name="ttapp_api" type="text" label="MOD_TTSTAND_API_LABEL" showon="api:ttapp" />
         <field name="ttapp_type" type="list" label="MOD_TTSTAND_TYPE_LABEL" showon="api:ttapp">
           <option value="poule">MOD_TTSTAND_POULE</option>

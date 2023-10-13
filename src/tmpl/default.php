@@ -1,10 +1,10 @@
 <?php
 /**
-* @Author	Gijs Lamon
-* @license	GNU/GPL http://www.gnu.org/copyleft/gpl.html
-**/
+ * @Author	Gijs Lamon
+ * @license	GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ **/
 
-defined('_JEXEC') or die();
+defined("_JEXEC") or die();
 
 // Libraries
 use Joomla\CMS\Factory;
@@ -13,24 +13,29 @@ use Joomla\CMS\Language\Text;
 // Load external files
 $document = Factory::getDocument();
 $document->addScript("https://ttapp.nl/dist/ttapp-widgets.js");
-$document->addStyleSheet("modules/mod_ttstand/css/mod_ttstand.css", array("version" => "auto"));
+$document->addStyleSheet("modules/mod_ttstand/css/mod_ttstand.css", ["version" => "auto"]);
 
-// Code
-echo '<div class="ttstand">';
-echo '<script>ttappwidget({token: "' . $api . '", view: "' . $type . '"';
-switch ($type) {
-	case "poule":
-		echo ', pouleid: "' . $poule . '"';
-		if ($cols != "") {
-			echo ', cols: "' . $cols . '"';
+switch ($api) {
+	case "ttapp":
+		// Code
+		echo '<div class="ttstand">';
+		echo '<script>ttappwidget({token: "' . $key . '", view: "' . $type . '"';
+		switch ($type) {
+			case "poule":
+				echo ', pouleid: "' . $poule . '"';
+				if ($cols != "") {
+					echo ', cols: "' . $cols . '"';
+				}
+				if ($headers != "") {
+					echo ', headers: "' . $headers . '"';
+				}
+				echo "});";
+				break;
+			default:
+				echo "});";
 		}
-		if ($headers != "") {
-			echo ', headers: "' . $headers . '"';
-		}
-		echo '});';
-		break;
-	default:
-		echo '});';
+		echo "</script>";
+		echo "</div>";
+	case "tabt":
+		echo "TabT";
 }
-echo '</script>';
-echo "</div>";
