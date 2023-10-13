@@ -24,15 +24,16 @@
     <folder>language</folder>
   </files>
   <languages folder="language">
-    <language tag="en-GB">en-GB/en-GB.mod_ttstand.ini</language>
-    <language tag="nl-NL">nl-NL/nl-NL.mod_ttstand.ini</language>
-  </languages>
+    <language tag="en-GB">en-GB.mod_ttstand.ini</language>
+    <language tag="nl-BE">nl-BE.mod_ttstand.ini</language>
+    <language tag="nl-NL">nl-NL.mod_ttstand.ini</language>
+   </languages>
   <config>
     <fields name="params">
       <fieldset name="basic">
         <field name="api" type="list" label="MOD_TTSTAND_CHOOSEAPI">
-          <option value="ttapp">MOD_TTSTAND_TTAPP</option>
           <option value="tabt">MOD_TTSTAND_TABT</option>
+          <option value="ttapp">MOD_TTSTAND_TTAPP</option>
         </field>
         <field name="tabt_account" type="text" label="MOD_TTSTAND_TABT_ACCOUNT_LABEL" showon="api:tabt" />
         <field name="tabt_password" type="password" label="MOD_TTSTAND_TABT_PASSWORD_LABEL" showon="api:tabt" />
