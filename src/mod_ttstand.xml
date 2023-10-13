@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" method="upgrade" client="site" >
+<extension type="module" method="upgrade" client="site"  version="3.0">
   <name>TT Stand</name>
   <author>Gijs Lamon</author>
   <copyright>(C) 2022 Gileba</copyright>
