@@ -20,6 +20,7 @@
   <dlid prefix="download_id=" />
   <files>
     <filename module="mod_ttstand">mod_ttstand.php</filename>
+    <folder>css</folder>
     <folder>tmpl</folder>
     <folder>language</folder>
   </files>
