@@ -12,7 +12,8 @@
 .ttstand tr td.ttapp-teamname {
 	width: 70%;
 }
-.ttstand tr td.ttapp-nplayed, .ttstand thead tr td.ttapp-points {
+.ttstand tr td.ttapp-nplayed,
+.ttstand thead tr td.ttapp-points {
 	width: 10%;
 }
 .ttstand tr td.ttapp-nplayed {
@@ -22,7 +23,10 @@
 	text-align: right;
 }
 
+.ttstand tbody td {
+	padding: 0.5rem;
+}
 
-.ttstand tbody tr:nth-child(even) {
+.ttstand tbody tr:nth-child(even) td {
 	background-color: #eee;
 }
