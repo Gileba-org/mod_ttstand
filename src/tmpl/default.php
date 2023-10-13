@@ -37,7 +37,7 @@ switch ($api) {
 		echo "</script>";
 		echo "</div>";
 	case "tabt":
-		echo "<table class='division'>";
+		echo "<table class='ttstand'>";
 		echo "<thead><tr>";
 		echo "<td>#</td><td>Team</td><td>Gesp</td><td>Punt</td>";
 		echo "</tr></thead>";
