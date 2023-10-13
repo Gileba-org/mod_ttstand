@@ -37,5 +37,17 @@ switch ($api) {
 		echo "</script>";
 		echo "</div>";
 	case "tabt":
-		echo "TabT";
+		echo "<table class='division'>";
+		echo "<thead><tr>";
+		echo "<td>#</td><td>Team</td><td>Gesp</td><td>Punt</td>";
+		echo "</tr></thead>";
+		foreach ($Response->RankingEntries as $entry) {
+			echo "<tr>";
+			echo "<td>$entry->Position</td>";
+			echo "<td>$entry->Team</td>";
+			echo "<td>$entry->GamesPlayed</td>";
+			echo "<td>$entry->Points</td>";
+			echo "</tr>";
+		}
+		echo "</table>";
 }

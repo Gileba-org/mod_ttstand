@@ -44,6 +44,15 @@ switch ($api) {
 		$username = $params->get("tabt_user");
 		$password = $params->get("tabt_password");
 		$division = $params->get("tabt_division");
+
+		// Create TabT API client
+		$tabt = new SoapClient("http://api.vttl.be/0.7/?wsdl");
+
+		// Prepare Test request
+		$Credentials = ["Account" => $username, "Password" => $password];
+
+		// Get ranking from a given division
+		$Response = $tabt->GetDivisionRanking(["Credentials" => $Credentials, "DivisionId" => 390]);
 }
 
 // Display the template
