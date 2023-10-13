@@ -49,10 +49,10 @@ switch ($api) {
 		$tabt = new SoapClient("https://api.vttl.be/0.7/?wsdl");
 
 		// Prepare Test request
-		$Credentials = ["Account" => $username, "Password" => $password];
+		$credentials = ["Account" => $username, "Password" => $password];
 
 		// Get ranking from a given division
-		$Response = $tabt->GetDivisionRanking(["Credentials" => $Credentials, "DivisionId" => 390]);
+		$response = $tabt->GetDivisionRanking(["Credentials" => $credentials, "DivisionId" => 390]);
 }
 
 // Display the template
