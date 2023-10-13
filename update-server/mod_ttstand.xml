@@ -14,5 +14,5 @@
 		<tags>
 			<tag>stable</tag>
 		</tags>
-		<targetplatform name="joomla" version="4.[0123456789]" />
+		<targetplatform name="joomla" version="4|5" />
 	</update>
