@@ -3,6 +3,19 @@
 	<changelog>
 		<element>mod_ttstand</element>
 		<type>module</type>
+		<version>1.3.0</version>
+		<new>
+			<item>Added official support for Joomla 5</item>
+		</new>
+		<fix>
+			<item>CSS-files were not installed</item>
+			<item>Alternate background color in table</item>
+			<item>Missing version attribute in manifest file</item>
+		</fix>
+	</changelog>
+	<changelog>
+		<element>mod_ttstand</element>
+		<type>module</type>
 		<version>1.2.0</version>
 		<change>
 			<item>Free subscription needed at https://www.gileba.be/software/ttstand/ for downloading and auto updating</item>
