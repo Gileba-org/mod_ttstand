@@ -3,6 +3,10 @@
 	width: 100%;
 }
 
+.ttstand tbody td {
+	padding: 0.5rem;
+}
+
 .ttstand thead tr td {
 	text-transform: capitalize;
 	font-weight: bold;
@@ -12,12 +16,16 @@
 .ttstand tr td.ttapp-teamname {
 	width: 70%;
 }
-.ttstand tr td.ttapp-nplayed, .ttstand thead tr td.ttapp-points {
+
+.ttstand tr td.ttapp-nplayed,
+.ttstand thead tr td.ttapp-points {
 	width: 10%;
 }
+
 .ttstand tr td.ttapp-nplayed {
 	text-align: center;
 }
+
 .ttstand tr td.ttapp-points {
 	text-align: right;
 }
