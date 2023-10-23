@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" method="upgrade" client="site"  version="3.0">
+<extension type="module" method="upgrade" client="site" >
   <name>TT Stand</name>
   <author>Gijs Lamon</author>
   <copyright>(C) 2022 Gileba</copyright>
@@ -13,7 +13,7 @@
   </description>
   <changelogurl>http://updates.gileba.be/changelogs/mod_ttstand.xml</changelogurl>
   <updateservers>
-   <server type="extension" priority="1" name="TT Stand for TTapp">
+   <server type="extension" priority="1" name="TT Stand">
       https://gileba.be/updates/mod_ttstand.xml
    </server>
   </updateservers>
