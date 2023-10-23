@@ -55,6 +55,8 @@ switch ($api) {
 
 		// Get ranking from a given division
 		$response = $tabt->GetDivisionRanking(["Credentials" => $credentials, "DivisionId" => $division]);
+
+		break;
 }
 
 // Display the template
