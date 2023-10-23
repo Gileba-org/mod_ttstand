@@ -39,6 +39,8 @@ switch ($api) {
 			$moduleclass_sfx = htmlspecialchars($params->get("moduleclass_sfx"));
 		}
 
+		break;
+
 	case "tabt":
 		//Params
 		$username = $params->get("tabt_user");
@@ -52,7 +54,7 @@ switch ($api) {
 		$credentials = ["Account" => $username, "Password" => $password];
 
 		// Get ranking from a given division
-		$response = $tabt->GetDivisionRanking(["Credentials" => $credentials, "DivisionId" => 390]);
+		$response = $tabt->GetDivisionRanking(["Credentials" => $credentials, "DivisionId" => $division]);
 }
 
 // Display the template
