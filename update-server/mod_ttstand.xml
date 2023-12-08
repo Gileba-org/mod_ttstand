@@ -8,6 +8,7 @@
 		<client>site</client>
 		<infourl title="TT Stand"></infourl>
 		<changelogurl>https://gileba.be/changelogs/mod_ttstand.xml</changelogurl>
+		<sha256>f7ca628e83592a080f5f72cbef15ae97f067f1821c4303038e5047a4c839f43d</sha256>
 		<downloads>
 			<downloadurl type="full" format="zip">https://gileba.be/index.php?option=com_osmembership&amp;task=download_update_package&amp;document_id=2</downloadurl>
 		</downloads>
