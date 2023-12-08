@@ -40,7 +40,14 @@ switch ($api) {
 	case "tabt":
 		echo "<table class='ttstand'>";
 		echo "<thead><tr>";
-		echo "<td>#</td><td>Team</td><td>Gesp</td><td>Punt</td>";
+		if (count($headers) > 1) {
+			echo "<td>$headers[0]</td>";
+			echo "<td>$headers[1]</td>";
+			echo "<td>$headers[2]</td>";
+			echo "<td>$headers[3]</td>";
+		} else {
+			echo "<td>#</td><td>Team</td><td>Gesp</td><td>Punt</td>";
+		}
 		echo "</tr></thead>";
 		foreach ($response->RankingEntries as $entry) {
 			echo "<tr>";

@@ -65,7 +65,8 @@
           <option value="0">JNO</option>
         </field>
         <field name="ttapp_headers" showon="api:ttapp, ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
-      </fieldset>
+        <field name="tabt_headers" showon="api:tabt" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
+     </fieldset>
       <fieldset name="advanced">
         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
       </fieldset>

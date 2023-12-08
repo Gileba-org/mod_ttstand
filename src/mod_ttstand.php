@@ -46,6 +46,7 @@ switch ($api) {
 		$username = $params->get("tabt_user");
 		$password = $params->get("tabt_password");
 		$division = $params->get("tabt_division");
+		$headers = explode(",", htmlspecialchars($params->get("tabt_headers")));
 
 		// Create TabT API client
 		$tabt = new SoapClient("https://api.vttl.be/0.7/?wsdl");
