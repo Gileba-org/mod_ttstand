@@ -6,8 +6,8 @@
   <license>GNU/GPL</license>
   <authorEmail>info@gileba.be</authorEmail>
   <authorUrl>www.gileba.be</authorUrl>
-  <version>1.3.1</version>
-  <creationDate>2023-10-23</creationDate>
+  <version>1.3.2</version>
+  <creationDate>2023-12-08</creationDate>
   <description>
     This module shows tabletennis information from API-powered suppliers on your Joomla site.
   </description>
@@ -65,7 +65,24 @@
           <option value="0">JNO</option>
         </field>
         <field name="ttapp_headers" showon="api:ttapp, ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
-      </fieldset>
+        <field name="tabt_col_pos" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_POS_LABEL" class="btn-group btn-group-yesno" default="0">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_name" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_NAME_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_played" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_PLAYED_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_points" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_POINTS_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_headers" showon="api:tabt" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
+     </fieldset>
       <fieldset name="advanced">
         <field name="moduleclass_sfx" type="textarea" rows="2" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" />
       </fieldset>
