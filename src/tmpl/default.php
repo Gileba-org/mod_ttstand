@@ -41,20 +41,40 @@ switch ($api) {
 		echo "<table class='ttstand'>";
 		echo "<thead><tr>";
 		if (count($headers) > 1) {
-			echo "<td>$headers[0]</td>";
-			echo "<td>$headers[1]</td>";
-			echo "<td>$headers[2]</td>";
-			echo "<td>$headers[3]</td>";
+			$i = 0;
+			foreach ($headers as $column) {
+				echo "<td>$headers[$i]</td>";
+				$i++;
+			}
 		} else {
-			echo "<td>#</td><td>Team</td><td>Gesp</td><td>Punt</td>";
+			if ($params->get("tabt_col_pos")) {
+				echo "<td>#</td>";
+			}
+			if ($params->get("tabt_col_name")) {
+				echo "<td>Team</td>";
+			}
+			if ($params->get("tabt_col_played")) {
+				echo "<td>Gesp</td>";
+			}
+			if ($params->get("tabt_col_points")) {
+				echo "<td>Punt</td>";
+			}
 		}
 		echo "</tr></thead>";
 		foreach ($response->RankingEntries as $entry) {
 			echo "<tr>";
-			echo "<td>$entry->Position</td>";
-			echo "<td>$entry->Team</td>";
-			echo "<td>$entry->GamesPlayed</td>";
-			echo "<td>$entry->Points</td>";
+			if ($params->get("tabt_col_pos")) {
+				echo "<td>$entry->Position</td>";
+			}
+			if ($params->get("tabt_col_name")) {
+				echo "<td>$entry->Team</td>";
+			}
+			if ($params->get("tabt_col_played")) {
+				echo "<td>$entry->GamesPlayed</td>";
+			}
+			if ($params->get("tabt_col_points")) {
+				echo "<td>$entry->Points</td>";
+			}
 			echo "</tr>";
 		}
 		echo "</table>";

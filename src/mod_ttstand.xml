@@ -65,6 +65,22 @@
           <option value="0">JNO</option>
         </field>
         <field name="ttapp_headers" showon="api:ttapp, ttapp_type:poule" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
+        <field name="tabt_col_pos" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_POS_LABEL" class="btn-group btn-group-yesno" default="0">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_name" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_NAME_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_played" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_PLAYED_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="tabt_col_points" showon="api:tabt" type="radio" label="MOD_TTSTAND_COLUMN_POINTS_LABEL" class="btn-group btn-group-yesno" default="1">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
         <field name="tabt_headers" showon="api:tabt" type="text" label="MOD_TTSTAND_HEADERS_LABEL" />
      </fieldset>
       <fieldset name="advanced">
