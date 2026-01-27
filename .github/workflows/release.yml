@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
       - name: Zip source
-        uses: papeloto/action-zip@v1
+        uses: papeloto/action-zip@5f1c4aa587ea41db1110df6a99981dbe19cee310 # v1
         with:
           files: src/
           dest: mod_ttstand.zip
@@ -21,7 +21,7 @@ jobs:
         with:
           files: mod_ttstand.zip
       - name: Deploy update server
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        uses: kevinpainchaud/simple-ftp-deploy-action@2c6e7dfe809abd4f8f687a78b5d79efaf5c439ad # v1.2.1
         with:
           ftp_host: ${{ secrets.FTP_HOST }}
           ftp_username: ${{ secrets.FTP_USERNAME }}
