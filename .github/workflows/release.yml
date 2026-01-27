@@ -21,7 +21,7 @@ jobs:
         with:
           files: mod_ttstand.zip
       - name: Deploy update server
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        uses: kevinpainchaud/simple-ftp-deploy-action@2c6e7dfe809abd4f8f687a78b5d79efaf5c439ad # v1.2.1
         with:
           ftp_host: ${{ secrets.FTP_HOST }}
           ftp_username: ${{ secrets.FTP_USERNAME }}
