@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
       - name: Zip source
         uses: papeloto/action-zip@5f1c4aa587ea41db1110df6a99981dbe19cee310 # v1
         with:
