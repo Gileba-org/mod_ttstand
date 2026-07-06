@@ -3,12 +3,20 @@
 	<changelog>
 	<element>mod_ttstand</element>
 	<type>module</type>
-	<version>1.3.2</version>
+	<version>1.3.3</version>
 	<fix>
-		<item>Show/Hide columns from TabT</item>
-		<item>Rename columns from TabT</item>
+		<item>Removed deprecation messages in PHP 8.1 and higher</item>
 	</fix>
 </changelog>
+	<changelog>
+		<element>mod_ttstand</element>
+		<type>module</type>
+		<version>1.3.2</version>
+		<fix>
+			<item>Show/Hide columns from TabT</item>
+			<item>Rename columns from TabT</item>
+		</fix>
+	</changelog>
 	<changelog>
 		<element>mod_ttstand</element>
 		<type>module</type>
