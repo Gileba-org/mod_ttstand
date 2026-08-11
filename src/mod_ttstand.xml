@@ -6,11 +6,12 @@
   <license>GNU/GPL</license>
   <authorEmail>info@gileba.be</authorEmail>
   <authorUrl>www.gileba.be</authorUrl>
-  <version>1.3.2</version>
-  <creationDate>2023-12-08</creationDate>
+  <version>1.3.3</version>
+  <creationDate>2026-03-13</creationDate>
   <description>
     This module shows tabletennis information from API-powered suppliers on your Joomla site.
   </description>
+  <targetplatform name="joomla" version="(4|5|6)" />
   <changelogurl>http://updates.gileba.be/changelogs/mod_ttstand.xml</changelogurl>
   <updateservers>
    <server type="extension" priority="1" name="TT Stand">
